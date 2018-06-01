@@ -1,0 +1,24 @@
+name=root
+password=12345
+
+create database rdias;
+
+use rdias;
+
+create table login
+(
+mobile_number varchar(13) not null,
+password varchar(35) not null,
+hint varchar(40) not null,
+email_id varchar(40) not null
+);	
+	
+insert into login values('8527801400','msnmsn','myname','jmi.mohsin@gmail.com');	
+
+create table about
+(
+id int,
+about varchar(100)
+)	
+
+insert into about values(0,'This is the result about your company');
